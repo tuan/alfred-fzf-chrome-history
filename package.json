@@ -1,6 +1,6 @@
 {
   "name": "alfred-fzf-chrome-history",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Fuzzy search chrome browser's history",
   "repository": "tuan/alfred-fzf-chrome-history",
   "main": "index.js",
