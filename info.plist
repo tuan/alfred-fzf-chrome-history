@@ -27,7 +27,7 @@
 	<key>description</key>
 	<string>Fuzzy search chrome browser's history</string>
 	<key>disabled</key>
-	<true/>
+	<false/>
 	<key>name</key>
 	<string>alfred-fzf-chrome-history</string>
 	<key>objects</key>
@@ -121,6 +121,6 @@
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>blog.tnguyen.one</string>
 </dict>
 </plist>
