@@ -26,7 +26,12 @@ Default prefix to trigger the workflow is: `ch`
 
 ### Scope search
 
-You can limit the search scope to a particular domain by specifying the domain keywords with @ prefix.
+You can limit the search scope to a particular domain by specifying the domain keywords with @ prefix. 
+Note: 
+1. Domain keywords are exact match. So `@git` will only match `github.com` or `gitlab.com`, but won't match `<g>ofor<it>.com`.
+2. You can specify multiple domain keywords in your query to incrementally fine tune your search. For example: `too broad @git need narrowing down to @hub and only dev tld @dev` will search only domains that match `git.*hub.*dev` such as `github.dev`
+
+
 
 Example:
 
