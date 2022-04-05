@@ -67,7 +67,7 @@ async function queryHistoryAsync(domainSqlLikeExpression, historyResultLimit) {
     FROM
       urls
     WHERE
-      SUBSTR(SUBSTR(url, INSTR(url, '//') + 2), 0, INSTR(SUBSTR(url, INSTR(url, '//') + 2), '/')) LIKE '%${domainSqlLikeExpression}%' AND
+      CASE WHEN INSTR(url, "?") > 0 THEN SUBSTR(url, 0, INSTR(url, "?") - 1) ELSE url END LIKE '%${domainSqlLikeExpression}%' AND
       title IS NOT NULL
     GROUP BY
       title
