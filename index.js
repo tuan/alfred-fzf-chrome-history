@@ -6,7 +6,7 @@ const ICON_PATH = "./icon.png";
 const QUERY_LIMIT = 10000;
 const FZF_LIMIT = 15;
 
-const domainKeywordRegex = /(?:^|\s)@(\b[^@\s]+)/gm;
+const domainKeywordRegex = /(?:^|\s)@(\b[^@\s]+)(?:$|\s)/gm;
 
 function processInput(input) {
   const domainKeywords = [];
